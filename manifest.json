@@ -1,0 +1,26 @@
+{
+    "name": "Automations",
+    "version": "0.1.3",
+    "description": "Adds a red border to all webpages matching mozilla.org.",
+    "manifest_version": 3,
+    "author": "Gerardo Galan",
+    "background":{
+        "service_worker": "service-worker.js",
+        "type": "module"
+    },
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Automations"
+    },
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage"
+      ],
+
+
+    "host_permissions":["http://*/*", "https://*/*"],
+    "icons":{
+        "32": "pinata-32.png"
+    }
+}
